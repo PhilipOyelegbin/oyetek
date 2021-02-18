@@ -1,0 +1,37 @@
+/* The menu container */
+.menu {float: right; overflow: hidden; margin-top: -85px; margin-right: 15px;}
+/* menu button */
+.menu .menubtn {font-size: 30px; border-radius: 30px; outline: none; color: purple; padding: 12px 16px; background-color: inherit; font-family: inherit; /* Important for vertical align on mobile phones */ margin: 0; /* Important for vertical align on mobile phones */}
+/* Add a gold background color to menu links on hover */
+.menu a:hover, .menu:hover .menubtn {background-color: cornsilk;}
+/* menu content (hidden by default) */
+.menuContent {display: none; background-color: inherit; max-width: 220px; z-index: auto; font-size: 24px; position: relative;}
+/* Links inside the menu */
+.menuContent a {float: none; color: purple; padding: 12px 16px; text-decoration: none; display: block;}
+/* Add an inherit background color to menu links on hover */
+.menuContent a:hover {background-color: silver;}
+/* Show the menu on click */
+.show {display: block;}
+
+/* Formatting the header area */
+header {background: lavender; height: 100px; width: 100%; border-radius: 30px;}
+header .header {height: 100px; width: 150px;}
+
+body {background-color: whitesmoke; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+p {padding: 20px; text-align: left;}
+
+/* Centering the body content */
+.container {max-width: 90%; margin: 0 auto; overflow: auto;}
+
+h2 {color:white; text-shadow: 3px 4px 4px blue; font-size: 24px;}
+h3 {font-size: 20px;}
+ol {list-style: disc inside; text-align: left;}
+table {border-spacing: 10px;}
+td {text-align: center;}
+th {font-size: large;}
+
+.button {background-color: plum; font-size: 16px; border-radius: 30px;}
+.contact {height: 20px; width: 20px;}
+
+footer {background-color: purple; border-radius: 15px; color: whitesmoke;}
+footer a {color: black;}

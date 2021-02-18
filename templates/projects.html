@@ -1,0 +1,27 @@
+<!-- Add Web-Content -->
+{% extends "index.html" %}
+{% block content %}
+<!-- Add Projects -->
+<div>
+    <center>
+        <form action="{{ url_for('generate') }}" method="POST" autocomplete="off">
+            <h2>Mini Project</h2>
+            <h3 style="color:darkblue">Password Generator</h3>
+            <p>OYETEK provides a password generator software to equip you with strong password for your social media account, debit card and others.</p>
+            <label>Full Name:</label><br>
+                <input id="name" name="Name" type="text" placeholder="AvyWilson" required />
+                <br>
+                <label>Mobile Number:</label><br>
+                <input id="mobile" name="Mobile" type="tel" required />
+                <br>
+                <button onclick="generate()" class="button">Generate</button><br>
+                <!-- Result -->
+            <label>Password: {{ pwd | safe }}</label>
+        </form>
+        <h3 style="color:darkblue">Vote Arbiter</h3>
+        <p>OYETEK provides a real time voting platform that shows the efficiency and posibility of i-voting in Nigeria. Click the button bellow to view.</p>
+        <a href="https://va_inec.herokuapp.com" target="_blank"><button class="button">INEC</button></a>
+        <a href="https://va_yct.herokuapp.com" target="_blank"><button class="button">Yabatech</button></a>
+    </center>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+<!-- Add Web-Content -->
+{% extends "index.html" %}
+{% block content %}
+<div>
+    <center>
+        <!-- Add Page Heading -->
+        <h2>Welcome To OYETEK!</h2>
+        <p>A company which provides quality installation with maintenance of air-conditioners of different types or inverters, in conjunction with software development. We also provide professional advice to our customers on which product is suitable for their specific needs in respect to eliminating unnecessary cost.<br>OYETEK, your preferred maintenance company!</p>
+        <article>
+            <!-- Our Service to Customers -->
+            <section>
+                <h3 style="color:darkblue">Range of Operation</h3>
+                <marquee>We render services to small residential and major industrial scale projects</marquee>
+                <img src="{{url_for('static', filename='images/bocgas.jpg')}}" height="100px" width="100px" alt="BOC GASES"/>
+                <img src="{{url_for('static', filename='images/whogohost.png')}}" height="100px" width="100px" alt="Whogohost"/>
+                <img src="{{url_for('static', filename='images/sterlingbank.jpg')}}" height="100px" width="100px" alt="Sterling Bank"/><hr>
+
+                <!-- Add Service and Mission Section -->
+                <table>
+                    <tr><th>Our Services</th><th>Mission Statement</th></tr>
+                    <tr><td>
+                        <ol>
+                            <li>Consultation</li>
+                            <li>Installation and Maintenance of Air-conditioners or Inverters</li>
+                            <li>Industrial Pipe Work and Duct Erection</li>
+                            <li>Software and Web Development</li>
+                            <li>Networking</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>Quality maintenance for individuals or companies</li>
+                            <li>Making life easy to the community through online platform</li>
+                        </ol>
+                    </td></tr>
+                </table>
+
+                <!-- Add Contact Section -->
+                <h3>Connect With Us</h3>
+                <img class="contact" src="{{url_for('static', filename='images/phone.png')}}" alt="Icon" />+2348188066398, <img class="contact" src="{{url_for('static', filename='images/whatsapp.png')}}" alt="Whatsapp"/><a href="https://wa.me/2348174071289" target="_blank">Chat</a>, <img class="contact" src="{{url_for('static', filename='images/instagram.jpg')}}" alt="IG"/><a href="https://instagram.com/official_oyetek" target="_blank">Follow</a>
+            </section>
+        </article>
+    </center>
+</div>
+{% endblock %}

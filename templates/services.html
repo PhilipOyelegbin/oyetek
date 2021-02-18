@@ -1,0 +1,19 @@
+<!-- Add Web-Content -->
+{% extends "index.html" %}
+{% block content %}
+<!-- Add Services -->
+<div>
+    <center>
+        <h2>Products & Services</h2>
+        <!-- Air-Conditioners/Inverters -->
+        <h3 style="color:darkblue">Installation and Maintenance of Air-Conditioners or Inverters</h3>
+        <p>We provide installation and maintenance services to industries and household.</p>
+        <img id=acslider src="{{ url_for('static', filename='images/air condition installation (indoor-violent).jpg') }}" height="100px" width="200px" alt="image"/>
+
+        <!-- Software/Web Development -->
+        <h3 style="color:darkblue">Software or Web Development</h3>
+        <p>We develop software(s) for commercial, engineering and personal use. We also offer basic web setup and management for startups in respect to cutomers satisfaction.</p>
+        <img id=swslider src="{{url_for('static', filename='images/mlog.png')}}" height="100px" width="200px" alt="image"/>
+    </center>
+</div>
+{% endblock %}

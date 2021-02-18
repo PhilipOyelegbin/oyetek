@@ -1,0 +1,47 @@
+<!-- Add Web-Content -->
+{% extends "index.html" %}
+{% block content %}
+<div>
+<center>
+    <!-- Add Page Heading -->
+    <h2>Get To Know Us</h2>
+    <p><i>OYETEK</i> is a company which deals in installation and maintenance of air-conditioners and inverters, in conjunction with software development.<br>
+    OYETEK, formerly known as "Oyelegbin Cooling Consult (OCC)" was founded in 2012 by Tunde Oyelegbin - an air-conditioner technician, to serve customers in need of quality air-condition service and ensure that their device is in the best of hands. OCC was then simply a maintenance company that provided quality installation and maintenance services to customers.<br>
+    In 2014, Peter and Philip Oyelegbin after they understudied him and subsequently gained admission to the prestigious Yaba College of Technology to study Industrial Maintenance Engineering, joined him as partners to help grow the vision.</p>
+    <p>In 2017 Peter and Philip Oyelegbin set up the motion to re-brand OCC giving it a new name "OYETEK" for the new age technology, which got incorporated in 2019. In 2020, Peter and Philip Oyelegbin in the course of expanding the company, decided to lunch into programming in order to infuse engineering with programming expanding the company's scope.<br>
+    OYETEK is currently the only maintenance company infused with programming in Nigeria and the West African region, certified by SMEDAN. The company started as a maintenance firm but has grown to offer a lot of other services. Focused on delivering top-notch maintenance at affordable price to maintain device lifespan.</p>
+    <section>
+        <h3 style="color:darkblue">Certificate of Regulation</h3>
+        <img src="{{url_for('static', filename='images/certificate.png')}}" height="100px" width="200px" alt="Image" />
+    </section><hr>
+
+    <article>
+        <!-- Add Executive Section -->
+        <section>
+            <table>
+                <tr><th colspan="3">Executive Members</th></tr>
+                <tr><td>
+                    <img src="{{url_for('static', filename='images/ceo.jpg')}}" height="130px" width="100px" alt="Image" /><br><strong>'Tunde Oyelegbin</strong><br>(Chief Executive Officer)
+                </td><td>
+                    <img src="{{url_for('static', filename='images/cdcm.jpg')}}" height="130px" width="100px" alt="Image" /><br><b>Peter Oyelegbin</b><br>(Chief Developer and Content Manager)<br>
+                    <a href="https://linkedin.com/in/peteroyelegbin" target="_blank"><img class="contact" src="{{url_for('static', filename='images/linkedin.png')}}" alt="LinkedIn" /></a>
+                    <a href="https://mobile.facebook.com/peter.oyelegbin" target="_blank"><img class="contact" src="{{url_for('static', filename='images/fb.png')}}" alt="Facebook" /></a>
+                    <a href="https://mobile.twitter.com/PeterOyelegbin" target="_blank"><img class="contact" src="{{url_for('static', filename='images/twitter.png')}}" alt="Twitter"></a>
+                </td><td>
+                    <img src="{{url_for('static', filename='images/cto.jpg')}}" height="130px" width="100px" alt="Image" /><br><b>Philip Oyelegbin</b><br>(Chief Technologist and Operation Officer)<br>
+                    <a href="https://linkedin.com/in/philipoyelegbin" target="_blank"><img class="contact" src="{{url_for('static', filename='images/linkedin.png')}}" alt="LinkedIn" /></a>
+                    <a href="https://mobile.facebook.com/philip.oyelegbin" target="_blank"><img class="contact" src="{{url_for('static', filename='images/fb.png')}}" alt="Facebook" /></a>
+                    <a href="https://mobile.twitter.com/OyelegbinPhilip" target="_blank"><img class="contact" src="{{url_for('static', filename='images/twitter.png')}}" alt="Twitter"></a>
+                </td></tr>
+            </table>
+
+            <!-- Add Contact Section -->
+            <h3>For More Enquiry</h3>
+            <img class="contact" src="{{url_for('static', filename='images/phone.png')}}" alt="Icon" />+2348188066398<br>
+            <a href="https://wa.me/2348174071289" target="_blank"><img class="contact" src="{{url_for('static', filename='images/whatsapp.png')}}" alt="Whatsapp" /></a>
+            <a href="https://instagram.com/official_oyetek/" target="_blank"><img class="contact" src="{{url_for('static', filename='images/instagram.jpg')}}" alt="IG"></a>
+        </section>
+    </article>
+</center>
+</div>
+{% endblock %}
