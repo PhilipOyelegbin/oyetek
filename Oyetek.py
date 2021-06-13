@@ -35,7 +35,7 @@ def generate():
         char = ['~', '@', '$', '%', '_', '?', '*', "'"]
         shuffle(char)
         character = char[0]
-        password = user + character + num
+        password = "Password: " + user + character + num
         return render_template('projects.html', pwd=password)
 
 
