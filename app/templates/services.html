@@ -1,0 +1,30 @@
+<!-- Add Web-Content -->
+{% extends "index.html" %}
+{% block content %}
+<!-- Add Services -->
+<article>
+    <h1>Services</h1>
+    <section class="service_section">
+        <!-- Consultation -->
+        <div class="services">
+            <img class="picture" loading="lazy" src="{{ url_for('static', filename='images/programmer.jpg') }}" alt="image"/>
+            <p>We offer free professional advice to our new and existing customers.</p>
+        </div>
+
+        <!-- Air-Conditioners -->    
+        <div class="services">
+            <div class="image_frame">
+                <img id="slide_image" class="picture" src="{{ url_for('static', filename='images/maintenance.jpg') }}" alt="image"/>
+                <img id="slide_image" class="picture" src="{{ url_for('static', filename='images/installation.jpg') }}" alt="image"/>
+            </div>
+            <p>We provide installation and maintenance services to industries and household.</p>
+        </div>
+
+        <!-- Web Development -->
+        <div class="services">
+            <img class="picture" loading="lazy" src="{{ url_for('static', filename='images/programmer.jpg') }}" alt="image"/>
+            <p>We offer web setup and management for startups in respect to cutomers satisfaction.</p>
+        </div>
+    </section>
+</article>
+{% endblock %}

@@ -1,0 +1,48 @@
+<!-- Add Web-Content -->
+{% extends "index.html" %}
+{% block content %}
+<article>
+	<!-- Add Page Heading -->
+	<h1>Get To Know Us</h1>
+	<p><i>OYETEK</i> is a company which deals in installation and maintenance of air-conditioners and inverters, in conjunction with software development.<br>
+	OYETEK, formerly known as "Oyelegbin Cooling Consult (OCC)" was founded in 2012 by Tunde Oyelegbin - an air-conditioner technician, to serve customers in need of quality air-condition service and ensure that their device is in the best of hands. OCC was then simply a maintenance company that provided quality installation and maintenance services to customers.<br>
+	In 2014, Peter and Philip Oyelegbin after they understudied him and subsequently gained admission to the prestigious Yaba College of Technology to study Industrial Maintenance Engineering, joined him as partners to help grow the vision.</p>
+	<p>In 2017 Peter and Philip Oyelegbin set up the motion to re-brand OCC giving it a new name "OYETEK" for the new age technology, which got incorporated in 2019. In 2020, Peter and Philip Oyelegbin in the course of expanding the company, decided to lunch into programming in order to infuse engineering with programming expanding the company's scope.<br>
+	OYETEK is currently the only maintenance company infused with programming in Nigeria and the West African region, certified by SMEDAN. The company started as a maintenance firm but has grown to offer a lot of other services. Focused on delivering top-notch maintenance at affordable price to maintain device lifespan.</p>
+	
+	<!-- Add Certificate Section -->
+	<section>
+		<h2>Certificate of Regulation</h2>
+		<img class="picture" loading="lazy" src="{{url_for('static', filename='images/certificate.png')}}" alt="Image" />
+	</section><hr>
+
+	<!-- Add Executive Section -->
+	<div class="grid_view">
+		<section class="row1">
+			<h2>Executive Members</h2>
+		</section>
+		<section class="row2">
+			<img class="excos" loading="lazy" src="{{url_for('static', filename='images/ceo.jpg')}}" alt="Image" /><br>
+			<b>'Tunde Oyelegbin</b><br>(Chief Executive Officer)
+		</section>
+		<section class="row3">
+			<img class="excos" loading="lazy" src="https://media-exp1.licdn.com/dms/image/C5603AQFvprGPJVnBhQ/profile-displayphoto-shrink_200_200/0/1588491817234?e=1621468800&v=beta&t=hQ2V0i830WS69UTdfpHz6YyrCqNMZ8ptFFs-hiaZlo0" alt="Image" /><br>
+			<b>Peter Oyelegbin</b><br>(Chief Developer and Content Manager)
+			<div class="contact">
+				<a href="https://linkedin.com/in/peteroyelegbin" class="contact-details" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+				<a href="https://mobile.facebook.com/peter.oyelegbin" class="contact-details" target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a>
+				<a href="https://mobile.twitter.com/PeterOyelegbin" class="contact-details" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+			</div>
+		</section>
+		<section class="row4">
+			<img class="excos" loading="lazy" src="https://lh3.googleusercontent.com/ogw/ADGmqu8Bo_wNRNcw2uuvl--RukCgQ1LLnEl1vg8fIN3E_g=s83-c-mo" alt="Image" /><br>
+			<b>Philip Oyelegbin</b><br>(Chief Technologist and Operation Officer)
+			<div class="contact">
+				<a href="https://linkedin.com/in/philipoyelegbin" class="contact-details" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+				<a href="https://mobile.facebook.com/philip.oyelegbin" class="contact-details" target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a>
+				<a href="https://mobile.twitter.com/OyelegbinPhilip" class="contact-details" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+			</div>
+		</section>
+	</div>
+</article>
+{% endblock %}

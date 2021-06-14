@@ -1,0 +1,40 @@
+<!-- Add Web-Content -->
+{% extends "index.html" %}
+{% block content %}
+<article>
+	<!-- Add Page Heading -->
+	<h1>Welcome To OYETEK!</h1>
+	<p>A company which provides quality installation with maintenance of air-conditioners of different types, in conjunction with software development. We also provide professional advice to our customers on which product is suitable for their specific needs in respect to eliminating unnecessary cost.<br>OYETEK, your preferred maintenance company!</p>
+
+	<!-- Our Service to Customers -->
+	<section>
+		<h2>Range of Operation</h2>
+		<marquee>We render services to small residential and major industrial scale projects</marquee>
+		<div>
+			<img class="picture" loading="lazy" src="{{url_for('static', filename='images/bocgas.jpg')}}" alt="BOC GASES"/>
+			<img class="picture" loading="lazy" src="{{url_for('static', filename='images/whogohost.png')}}" alt="Whogohost"/>
+			<img class="picture" loading="lazy" src="{{url_for('static', filename='images/sterlingbank.jpg')}}" alt="Sterling Bank"/><hr>
+		</div>
+
+		<!-- Add Service and Mission container -->
+		<div class="serviceNmission">
+			<div>
+				<h2>Our Services</h2>
+				<ol>
+					<li>Consultation</li>
+					<li>Installation and Maintenance of Air-conditioners</li>
+					<li>Industrial Pipe Work and Duct Erection</li>
+					<li>Web Development</li>
+				</ol>
+			</div>
+			<div>
+				<h2>Mission Statement</h2>
+				<ol>
+					<li>Quality maintenance for individuals or companies</li>
+					<li>Making life easy to the community through online platform</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+</article>
+{% endblock %}
