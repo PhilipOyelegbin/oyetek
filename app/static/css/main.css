@@ -1,0 +1,112 @@
+* {margin: 0; padding: 0; border: none;}
+
+body {font-family: 'Inter', Arial, Helvetica, sans-serif; padding: 5px;}
+
+main {text-align: center;}
+
+/* Formatting the header area */
+header {background: lavender; border-radius: 10px; top: 0; width: 100%; height: 65px;}
+
+header .logo {height: 60px; width: 100px;}
+
+/* The menu container */
+.menu {float: right; overflow: hidden; margin: -53px 10px; background-color: lavender;}
+
+/* menu button */
+.menu .menubtn {outline: none; color: purple; font-size: 2em; padding: 0 16px;}
+
+/* Add a background color to menu links on hover */
+.menu a:hover, .menu:hover .menubtn {background-color: cornsilk;}
+
+/* menu content (hidden by default) */
+.menuContent {display: none; background-color: inherit; width: 100vw; height: 100vh; z-index: auto; position: absolute; left: 0;}
+
+/* Links inside the menu */
+.menuContent a {float: none; color: purple; text-decoration: none; display: block; padding: 20px;}
+
+/* Add an inherit background color to menu links on hover */
+.menuContent a:hover {background-color: #999;}
+
+/* Show the menu on click */
+.show {display: block;}
+
+h1 {color: #eee; text-shadow: 3px 4px 4px blue; text-align: center;}
+
+h2 {text-align: center;}
+
+p {padding: 20px; text-align: left;}
+
+ol {list-style: disc inside; text-align: left;}
+
+.serviceNmisson {display: grid; grid-template-columns: 1fr; grid-gap: 40px; max-width: 1280px; width: 100%; margin: 0 auto; margin-bottom: 40px;}
+
+/* grid view */
+.grid_view {display: grid; grid-gap: 10px; grid-template-areas: "row1 row1" "row2 row2" "row3 row4";}
+.row1 {grid-area: row1;}
+.row2 {grid-area: row2;}
+.row3 {grid-area: row3;}
+.row4 {grid-area: row4;}
+
+.service_section {display: flex; flex-flow: wrap; justify-content: center;}
+
+.services {background: #eee; width: 300px; margin: 10px auto; padding: 10px 0; overflow: hidden;}
+
+@keyframes slide_animation {0%{left: 0px;} 10%{left: 0px;} 20%{left: 0px;} 30%{left: 0px;} 40%{left: -300px;} 50%{left: -300px;}
+    60%{left: -300px;} 70%{left: -300px;} 80%{left: 0px;} 90%{left: 0px;} 100%{left: 0px;}}
+
+.image_frame {width: 600px; height: 150px; position: relative; animation-duration: 10s; animation-name: slide_animation; animation-iteration-count: infinite;
+    animation-direction: normal; animation-play-state: running;}
+
+#slide_image {padding: 0 20px;}
+
+.picture {height: 150px; width: 250px;}
+
+.excos {height: 150px; width: 70%;}
+
+.popup {color: blue; text-decoration: underline; cursor: pointer;}
+
+.close-btn {margin-left: 230px; font-size: 2em; cursor: pointer;}
+
+.form-card {display: none; border: 1px solid #666; background:#eee; border-radius: 5px; margin: 0 auto; width: 280px;}
+
+.form {padding-bottom: 20px; text-align: left; margin: auto; width: 85%;}
+
+.form-card input {padding: 5px; font-size: 1em; border: solid 1px #666; width: 95%; margin-bottom: 5px;}
+
+.button {background-color: plum; font-size: 1em; border: groove 2px #666; border-radius: 5px; width: 100%; padding: 5px 0;}
+
+.view {display: block; text-align: center;}
+
+.contact-details {text-decoration: none; grid-template-columns: 1fr; margin: 5px;}
+
+.result {background: #69FFE3;}
+
+footer {background-color: purple; border-radius: 10px; color: #eee; text-align: center;}
+
+.contact {display: flex; justify-content: center; margin: 5px; flex-wrap: wrap;}
+
+footer a {color: #000; text-decoration: none; grid-template-columns: 1fr; margin: 5px;}
+
+footer > p {text-align: center;}
+
+
+/* A few media query to set some font sizes at different screen sizes.*/
+@media only screen and (min-width: 768px) {
+    body {font-size: 1.3em;}
+
+    .serviceNmisson {display: flex; flex-flow: wrap; justify-content: center;}
+
+    .serviceNmisson > div {margin: 0 20px;}
+
+    .excos {width: 30%;}
+    
+    .services {margin: 10px;}
+
+	.close-btn {margin-left: 420px;}
+	
+	.form-card {width: 500px;}
+	
+    .form {width: 90%;}
+    
+    .button {width: 98%;}
+}
